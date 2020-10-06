@@ -3,7 +3,7 @@
 ## Introduction<br>
 In this repository you will find several database query examples, using <b>Spring Data Jpa</b>. 
 The code examples was made in addition to a <b>Microsoft Word</b> file that discusses the <i>pros</i> and <i>cons</i> of the different
-query methods availiable in <b>Spring Data Jpa</b>
+query methods available in <b>Spring Data Jpa</b>
 
 ## Technologies<br>
 * Java 8
