@@ -14,7 +14,7 @@ query methods available in <b>Spring Data Jpa</b>
 
 ### 1)<br>
 To run the project, you need to connect it to a local Microsoft SQL database instance. 
-After this you have to reformat the application.properties file, and edit the following lines:<br>
+After this you have to reformat the application.properties file, and edit the following lines:<br><br>
 spring.datasource.url=jdbc:sqlserver://localhost;databaseName=<<i>DATABASENAME</i>><br>
 spring.datasource.username=<<i>USERNAME</i>><br>
 spring.datasource.password=<<i>PASSWORD</i>><br>
