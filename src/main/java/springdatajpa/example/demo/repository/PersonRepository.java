@@ -12,6 +12,8 @@ import java.util.List;
 @Repository
 public interface PersonRepository extends JpaRepository<Person, Integer> {
 
+
+//  Entity projection
     List<Person> findByFirstName(String firstName);
 
     @Query("from Person as p")
@@ -20,6 +22,9 @@ public interface PersonRepository extends JpaRepository<Person, Integer> {
     @Query(value="from Person as p where p.firstName=:firstName")
     List<Person> findByFirstNameCustom(@Param("firstName") String firstName);
 
+    List<Person> findByFirstNameNamedQuery(@Param("firstName") String firstName);
+
+    List<Person> findByFirstNameNamedNativeQuery(@Param("firstName") String firstName);
 
     @Query(value="select new springdatajpa.example.demo.model.PersonDto(p.firstName, p.lastName, p.address) FROM Person p where p.firstName = :firstName")
     List<PersonDto> findByFirstNameDto(@Param("firstName") String firstName);
@@ -30,19 +35,13 @@ public interface PersonRepository extends JpaRepository<Person, Integer> {
     @Query(nativeQuery = true)
     List<PersonDto> findByFirstNameDtoNative(@Param("firstName") String firstName);
 
-
-    List<Person> findByFirstNameNamedQuery(@Param("firstName") String firstName);
-
-
-    List<Person> findByFirstNameNamedNativeQuery(@Param("firstName") String firstName);
-
-
     @Query(nativeQuery = true)
     List<PersonDto> findByFirstNameOrLastNameOrAddressDtoNative(
             @Param("firstName") String firstName,
             @Param("lastName") String lastName,
             @Param("address") String address
             );
+
 
 //  Interface projection
 
@@ -62,7 +61,7 @@ public interface PersonRepository extends JpaRepository<Person, Integer> {
     List<PersonView> findByFirstNameNamedNativePersonView(@Param("firstName") String firstName);
 
 
-    //    Will fail, but worth to notice
+//    Will fail, but worth to notice
 //    @Query(value="SELECT p.firstName, p.lastName FROM Person p WHERE p.firstName = :firstName")
 //    List<PersonView> findByFirstNamePersonView(@Param("firstName") String firstName);
 

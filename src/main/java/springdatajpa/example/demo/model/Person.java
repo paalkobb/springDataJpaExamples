@@ -3,39 +3,31 @@ package springdatajpa.example.demo.model;
 import javax.persistence.*;
 import java.util.Collection;
 
-
-@NamedQuery(
-        name = "Person.findByFirstNameNamedQuery",
-        query = "FROM Person p where p.firstName = :firstName"
+@SqlResultSetMappings(
+        {@SqlResultSetMapping(
+                name = "PersonDtoNativeMapper",
+                classes = @ConstructorResult(
+                        targetClass = PersonDto.class,
+                        columns = {
+                                @ColumnResult(name = "firstName", type = String.class),
+                                @ColumnResult(name = "lastName", type = String.class),
+                                @ColumnResult(name = "address", type = String.class)
+                        })
+        ),
+        @SqlResultSetMapping(
+                name = "PersonMapping",
+                classes = @ConstructorResult(
+                        targetClass = Person.class,
+                        columns = {
+                                @ColumnResult(name = "firstName"),
+                                @ColumnResult(name = "lastName"),
+                                @ColumnResult(name = "age"),
+                                @ColumnResult(name = "address"),
+                                @ColumnResult(name = "gender")
+                        }
+                )
+        )}
 )
-
-
-@SqlResultSetMapping(
-        name = "PersonDtoNativeMapper",
-        classes = @ConstructorResult(
-                targetClass = PersonDto.class,
-                columns = {
-                        @ColumnResult(name="firstName", type=String.class),
-                        @ColumnResult(name="lastName", type=String.class),
-                        @ColumnResult(name="address", type=String.class)
-                })
-)
-
-@SqlResultSetMapping(
-        name = "PersonMapping",
-        classes = @ConstructorResult(
-                targetClass = Person.class,
-                columns = {
-                        @ColumnResult(name="firstName"),
-                        @ColumnResult(name="lastName"),
-                        @ColumnResult(name="age"),
-                        @ColumnResult(name="address"),
-                        @ColumnResult(name="gender")
-                }
-        )
-)
-
-
 @NamedNativeQueries({
         @NamedNativeQuery(
                 name = "Person.findByFirstNameDtoNative",
@@ -50,14 +42,17 @@ import java.util.Collection;
         @NamedNativeQuery(
                 name = "Person.findByFirstNameNamedNativePersonView",
                 query = "SELECT p.firstName, p.lastName FROM Person p WHERE p.firstName = :firstName"
+        ),
+        @NamedNativeQuery(
+                name="Person.findByFirstNameNamedNativeQuery",
+                query="SELECT * FROM Person p WHERE p.firstName = :firstName",
+                resultSetMapping = "PersonMapping"
         )
     }
 )
-
-@NamedNativeQuery(
-        name="Person.findByFirstNameNamedNativeQuery",
-        query="SELECT * FROM Person p WHERE p.firstName = :firstName",
-        resultSetMapping = "PersonMapping"
+@NamedQuery(
+        name = "Person.findByFirstNameNamedQuery",
+        query = "FROM Person p where p.firstName = :firstName"
 )
 @Entity
 @Table(name="Person")
