@@ -1,13 +1,112 @@
+insert into products (name, price) VALUES ('Iphone 1', 789);
+insert into products (name, price) VALUES ('Iphone 2', 789);
+insert into products (name, price) VALUES ('Iphone 3', 789);
+insert into products (name, price) VALUES ('Iphone 4', 789);
+insert into products (name, price) VALUES ('Iphone 5', 789);
+insert into products (name, price) VALUES ('Iphone 6', 789);
+insert into products (name, price) VALUES ('Iphone 7', 789);
+insert into products (name, price) VALUES ('Iphone 8', 789);
+insert into products (name, price) VALUES ('Iphone 9', 789);
 insert into products (name, price) VALUES ('Iphone 10', 789);
-insert into products (name, price) VALUES ('Iphone 10', 789);
-insert into products (name, price) VALUES ('Iphone 10', 789);
-insert into products (name, price) VALUES ('Iphone 10', 789);
-insert into products (name, price) VALUES ('Iphone 10', 789);
-insert into products (name, price) VALUES ('Iphone 10', 789);
-insert into products (name, price) VALUES ('Iphone 10', 789);
-insert into products (name, price) VALUES ('Iphone 10', 789);
-insert into products (name, price) VALUES ('Iphone 10', 789);
-insert into products (name, price) VALUES ('Iphone 10', 789);
+
+insert into products (name, price) VALUES ('Iphone 1', 100);
+insert into products (name, price) VALUES ('Iphone 1', 100);
+insert into products (name, price) VALUES ('Iphone 1', 100);
+insert into products (name, price) VALUES ('Iphone 1', 100);
+insert into products (name, price) VALUES ('Iphone 1', 100);
+insert into products (name, price) VALUES ('Iphone 1', 100);
+insert into products (name, price) VALUES ('Iphone 1', 100);
+insert into products (name, price) VALUES ('Iphone 1', 100);
+insert into products (name, price) VALUES ('Iphone 1', 100);
+insert into products (name, price) VALUES ('Iphone 1', 100);
+
+insert into products (name, price) VALUES ('Iphone 2', 200);
+insert into products (name, price) VALUES ('Iphone 2', 200);
+insert into products (name, price) VALUES ('Iphone 2', 200);
+insert into products (name, price) VALUES ('Iphone 2', 200);
+insert into products (name, price) VALUES ('Iphone 2', 200);
+insert into products (name, price) VALUES ('Iphone 2', 200);
+insert into products (name, price) VALUES ('Iphone 2', 200);
+insert into products (name, price) VALUES ('Iphone 2', 200);
+insert into products (name, price) VALUES ('Iphone 2', 200);
+insert into products (name, price) VALUES ('Iphone 2', 200);
+
+insert into products (name, price) VALUES ('Iphone 3', 300);
+insert into products (name, price) VALUES ('Iphone 3', 300);
+insert into products (name, price) VALUES ('Iphone 3', 300);
+insert into products (name, price) VALUES ('Iphone 3', 300);
+insert into products (name, price) VALUES ('Iphone 3', 300);
+insert into products (name, price) VALUES ('Iphone 3', 300);
+insert into products (name, price) VALUES ('Iphone 3', 300);
+insert into products (name, price) VALUES ('Iphone 3', 300);
+insert into products (name, price) VALUES ('Iphone 3', 300);
+insert into products (name, price) VALUES ('Iphone 3', 300);
+
+insert into products (name, price) VALUES ('Iphone 4', 400);
+insert into products (name, price) VALUES ('Iphone 4', 400);
+insert into products (name, price) VALUES ('Iphone 4', 400);
+insert into products (name, price) VALUES ('Iphone 4', 400);
+insert into products (name, price) VALUES ('Iphone 4', 400);
+insert into products (name, price) VALUES ('Iphone 4', 400);
+insert into products (name, price) VALUES ('Iphone 4', 400);
+insert into products (name, price) VALUES ('Iphone 4', 400);
+insert into products (name, price) VALUES ('Iphone 4', 400);
+insert into products (name, price) VALUES ('Iphone 4', 400);
+
+insert into products (name, price) VALUES ('Iphone 5', 500);
+insert into products (name, price) VALUES ('Iphone 5', 500);
+insert into products (name, price) VALUES ('Iphone 5', 500);
+insert into products (name, price) VALUES ('Iphone 5', 500);
+insert into products (name, price) VALUES ('Iphone 5', 500);
+insert into products (name, price) VALUES ('Iphone 5', 500);
+insert into products (name, price) VALUES ('Iphone 5', 500);
+insert into products (name, price) VALUES ('Iphone 5', 500);
+insert into products (name, price) VALUES ('Iphone 5', 500);
+insert into products (name, price) VALUES ('Iphone 5', 500);
+
+insert into products (name, price) VALUES ('Iphone 6', 600);
+insert into products (name, price) VALUES ('Iphone 6', 600);
+insert into products (name, price) VALUES ('Iphone 6', 600);
+insert into products (name, price) VALUES ('Iphone 6', 600);
+insert into products (name, price) VALUES ('Iphone 6', 600);
+insert into products (name, price) VALUES ('Iphone 6', 600);
+insert into products (name, price) VALUES ('Iphone 6', 600);
+insert into products (name, price) VALUES ('Iphone 6', 600);
+insert into products (name, price) VALUES ('Iphone 6', 600);
+insert into products (name, price) VALUES ('Iphone 6', 600);
+
+insert into products (name, price) VALUES ('Iphone 7', 998);
+insert into products (name, price) VALUES ('Iphone 7', 997);
+insert into products (name, price) VALUES ('Iphone 7', 996);
+insert into products (name, price) VALUES ('Iphone 7', 995);
+insert into products (name, price) VALUES ('Iphone 7', 994);
+insert into products (name, price) VALUES ('Iphone 7', 993);
+insert into products (name, price) VALUES ('Iphone 7', 995);
+insert into products (name, price) VALUES ('Iphone 7', 997);
+insert into products (name, price) VALUES ('Iphone 7', 998);
+insert into products (name, price) VALUES ('Iphone 7', 993);
+
+insert into products (name, price) VALUES ('Iphone 8', 191);
+insert into products (name, price) VALUES ('Iphone 8', 929);
+insert into products (name, price) VALUES ('Iphone 8', 499);
+insert into products (name, price) VALUES ('Iphone 8', 995);
+insert into products (name, price) VALUES ('Iphone 8', 939);
+insert into products (name, price) VALUES ('Iphone 8', 299);
+insert into products (name, price) VALUES ('Iphone 8', 995);
+insert into products (name, price) VALUES ('Iphone 8', 949);
+insert into products (name, price) VALUES ('Iphone 8', 997);
+insert into products (name, price) VALUES ('Iphone 8', 969);
+
+insert into products (name, price) VALUES ('Iphone 9', 900);
+insert into products (name, price) VALUES ('Iphone 9', 900);
+insert into products (name, price) VALUES ('Iphone 9', 900);
+insert into products (name, price) VALUES ('Iphone 9', 900);
+insert into products (name, price) VALUES ('Iphone 9', 900);
+insert into products (name, price) VALUES ('Iphone 9', 900);
+insert into products (name, price) VALUES ('Iphone 9', 900);
+insert into products (name, price) VALUES ('Iphone 9', 900);
+insert into products (name, price) VALUES ('Iphone 9', 900);
+insert into products (name, price) VALUES ('Iphone 9', 900);
 
 insert into products (name, price) VALUES ('Iphone 10', 999);
 insert into products (name, price) VALUES ('Iphone 10', 999);
@@ -19,4 +118,3 @@ insert into products (name, price) VALUES ('Iphone 10', 999);
 insert into products (name, price) VALUES ('Iphone 10', 999);
 insert into products (name, price) VALUES ('Iphone 10', 999);
 insert into products (name, price) VALUES ('Iphone 10', 999);
-

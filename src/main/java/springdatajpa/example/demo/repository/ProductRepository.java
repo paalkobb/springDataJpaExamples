@@ -16,15 +16,19 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
     // naming convention
     List<Product> findByName(String name);
 
+    List<Product> findByPrice(float price);
+
     List<Product> findByNameAndPrice(String name, float price);
 
     List<Product> findByNameOrPrice(String name, float price);
 
-    // Will throw an exception because no field with name 'firstName'
-    // Worth to notice that the error message is 'firstName' with lower 'f'
-    // But the method name is capital 'F'.
-    // E.g Spring Data follows normal naming convention
-//    List<Product> findByFirstName(String name);
+    List<Product> findByPriceOrderByNameAsc(float price);
+
+    List<Product> findByNameContainsAndPriceBetween(String name, float start, float end);
+
+    List<Product> findByNameContainsAndPriceBetweenOrderByPriceAsc(String name, float start, float end);
+
+
 
 
 }

@@ -25,12 +25,6 @@ class ProductTest {
     private ProductRepository repo;
 
     @Test
-    void testCreateProduct(){
-        Product product = new Product("Iphone 10", 789);
-        repo.save(product);
-    }
-
-    @Test
     @Sql({"/insertIntoProduct.sql"})
     void findByName(){
         List<Product> p = repo.findByName("Iphone 10");
@@ -40,6 +34,14 @@ class ProductTest {
         }
     }
 
+    @Test
+    @Sql({"/insertIntoProduct.sql"})
+    void findByPrice(){
+        List<Product> p = repo.findByPrice(789);
+        for (Product pp : p){
+            log.info(pp.toString());
+        }
+    }
 
     @Test
     @Sql({"/insertIntoProduct.sql"})
@@ -66,6 +68,33 @@ class ProductTest {
     void findByNameOrPrice(){
         List<Product> p = repo.findByNameOrPrice("Iphone 10", 78);
         Assertions.assertNotNull(p);
+        for (Product pp : p){
+            log.info(pp.toString());
+        }
+    }
+
+    @Test
+    @Sql({"/insertIntoProduct.sql"})
+    void findByPriceOrderByNameAsc(){
+        List<Product> p = repo.findByPriceOrderByNameAsc(789);
+        for (Product pp : p){
+            log.info(pp.toString());
+        }
+    }
+
+    @Test
+    @Sql({"/insertIntoProduct.sql"})
+    void findByNameContainsAndPriceBeetween(){
+        List<Product> p = repo.findByNameContainsAndPriceBetween("iph", 250, 789);
+        for (Product pp : p){
+            log.info(pp.toString());
+        }
+    }
+
+    @Test
+    @Sql({"/insertIntoProduct.sql"})
+    void findByNameContainsAndPriceBetweenOrderByPriceAsc(){
+        List<Product> p = repo.findByNameContainsAndPriceBetweenOrderByPriceAsc("iph", 244, 987);
         for (Product pp : p){
             log.info(pp.toString());
         }
