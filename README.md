@@ -24,5 +24,5 @@ https://docs.microsoft.com/en-us/sql/relational-databases/lesson-1-connecting-to
 
 You do not have to create Tables in the database.
 ### 2)<br>
-Run the application once, this way Spring Data JPA will create all necessary database tables.
-After this you can run the test queries.
+Run the application once. This way Spring Data JPA will create all necessary database tables.
+After this you can run the test queries against your local database instance. 
